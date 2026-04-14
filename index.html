@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太陽系行星探險 - The Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Image Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>太陽系行星探險</h1>
+            <p>探索我們宇宙中的八大行星</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <h2>太陽系簡介</h2>
+            <p>太陽系是以太陽為中心，由行星、衛星、小行星和彗星等天體組成的系統。它位於銀河系獵戶臂內，距銀河系中心約26,000光年。太陽系由八大行星組成，分別是水星、金星、地球、火星、木星、土星、天王星和海王星。這些行星環繞太陽公轉，各有其獨特的特徵和神秘之處。</p>
+            <p>在本網站中，您將深入了解每個行星的特性、大小、距離太陽的距離、衛星數量以及其他迷人的天文數據。點擊下方的行星，開始您的太陽系之旅！</p>
+        </div>
+    </section>
+
+    <!-- Solar System Diagram Section -->
+    <section class="solar-system">
+        <div class="container">
+            <h2>太陽系行星圖</h2>
+            <div class="solar-system-diagram">
+                <svg width="100%" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Sun -->
+                    <circle cx="500" cy="300" r="40" fill="#FDB813" class="sun" title="太陽"></circle>
+                    <text x="500" y="360" text-anchor="middle" class="label">太陽</text>
+
+                    <!-- Mercury's Orbit -->
+                    <circle cx="500" cy="300" r="80" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Mercury -->
+                    <g class="planet" data-planet="mercury">
+                        <circle cx="580" cy="300" r="8" fill="#8C7853"></circle>
+                        <text x="580" y="325" text-anchor="middle" class="label">水星</text>
+                        <circle cx="580" cy="300" r="12" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Venus's Orbit -->
+                    <circle cx="500" cy="300" r="120" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Venus -->
+                    <g class="planet" data-planet="venus">
+                        <circle cx="620" cy="300" r="12" fill="#FFC649"></circle>
+                        <text x="620" y="330" text-anchor="middle" class="label">金星</text>
+                        <circle cx="620" cy="300" r="16" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Earth's Orbit -->
+                    <circle cx="500" cy="300" r="150" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Earth -->
+                    <g class="planet" data-planet="earth">
+                        <circle cx="650" cy="300" r="12" fill="#4A90E2"></circle>
+                        <text x="650" y="330" text-anchor="middle" class="label">地球</text>
+                        <circle cx="650" cy="300" r="16" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Mars's Orbit -->
+                    <circle cx="500" cy="300" r="180" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Mars -->
+                    <g class="planet" data-planet="mars">
+                        <circle cx="680" cy="300" r="10" fill="#E27B58"></circle>
+                        <text x="680" y="325" text-anchor="middle" class="label">火星</text>
+                        <circle cx="680" cy="300" r="14" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Jupiter's Orbit -->
+                    <circle cx="500" cy="300" r="240" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Jupiter -->
+                    <g class="planet" data-planet="jupiter">
+                        <circle cx="740" cy="300" r="20" fill="#C88B3A"></circle>
+                        <text x="740" y="335" text-anchor="middle" class="label">木星</text>
+                        <circle cx="740" cy="300" r="24" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Saturn's Orbit -->
+                    <circle cx="500" cy="300" r="290" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Saturn -->
+                    <g class="planet" data-planet="saturn">
+                        <circle cx="790" cy="300" r="18" fill="#E6D89C"></circle>
+                        <!-- Saturn's rings -->
+                        <ellipse cx="790" cy="300" rx="32" ry="8" fill="none" stroke="#C9A961" stroke-width="2"></ellipse>
+                        <text x="790" y="330" text-anchor="middle" class="label">土星</text>
+                        <circle cx="790" cy="300" r="22" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Uranus's Orbit -->
+                    <circle cx="500" cy="300" r="330" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Uranus -->
+                    <g class="planet" data-planet="uranus">
+                        <circle cx="830" cy="300" r="14" fill="#4FD0E7"></circle>
+                        <text x="830" y="325" text-anchor="middle" class="label">天王星</text>
+                        <circle cx="830" cy="300" r="18" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+
+                    <!-- Neptune's Orbit -->
+                    <circle cx="500" cy="300" r="360" fill="none" stroke="#444" stroke-dasharray="5,5" opacity="0.5"></circle>
+                    <!-- Neptune -->
+                    <g class="planet" data-planet="neptune">
+                        <circle cx="860" cy="300" r="14" fill="#4166F5"></circle>
+                        <text x="860" y="325" text-anchor="middle" class="label">海王星</text>
+                        <circle cx="860" cy="300" r="18" fill="none" stroke="#FDB813" opacity="0" class="orbit-indicator"></circle>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 太陽系行星探險網站。數據來源：NASA API</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
